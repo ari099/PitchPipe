@@ -13,19 +13,24 @@ class Ui(QtWidgets.QMainWindow):
       self.synthesizer = Synthesizer(osc1_waveform=Waveform.sine, osc1_volume=1.0, use_osc2=False)
 
       # Note Frequencies
-      self.noteFrequencies = {
-         "C" : 261.626,
-         "E" : 329.628,
-         "G" : 391.996,
-         "A" : 440.0
-      }
+      self.noteFrequencies = [
+         {"D" : 293.66},
+         {"E" : 329.63},
+         {"F" : 349.23},
+         {"G" : 392.0},
+         {"A" : 440.0},
+         {"B" : 493.88},
+         {"C" : 261.63}
+      ]
 
       # Find the pitch pipe dial with the name 'pitch_dial'
       self.dial = self.findChild(QtWidgets.QDial, 'pitch_dial')
       self.dial.valueChanged.connect(self.dialMoved)
+      self.pitch = list(self.noteFrequencies[self.dial.value()-2].keys())[0]
 
       # Find the label 'note_label'
       self.noteLabel = self.findChild(QtWidgets.QLabel, 'note_label')
+      self.noteLabel.setText(self.pitch)
 
       # Find the label 'position_label'
       self.positionLabel = self.findChild(QtWidgets.QLabel, 'position_label')
@@ -39,10 +44,15 @@ class Ui(QtWidgets.QMainWindow):
    
    # ############################# UI CONTROL METHODS #############################
    def playNote(self):
-      self.player.play_wave(self.synthesizer.generate_constant_wave(self.noteFrequencies[self.noteLabel.text()], 0.5))
+      self.player.play_wave(
+         self.synthesizer.generate_constant_wave(
+            self.noteFrequencies[self.dial.value()-2][self.pitch], 0.5)
+         )
 
    def dialMoved(self):
-      pass
+      self.pitch = list(self.noteFrequencies[self.dial.value()-2].keys())[0]
+      self.noteLabel.setText(self.pitch)
+      # print(self.dial.value())
 
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
