@@ -2,9 +2,9 @@
 A simple pitch program written in Python.
 
 ## Table of Contents
-* [Installation](https://github.com/ari099/PitchPipe/new/master?readme=1#Installation)
-* [Usage](https://github.com/ari099/PitchPipe/new/master?readme=1#Usage)
-* [Contributing](https://github.com/ari099/PitchPipe/new/master?readme=1#Contributing)
+* [Installation](https://github.com/ari099/PitchPipe/blob/master/README.md#Installation)
+* [Usage](https://github.com/ari099/PitchPipe/blob/master/README.md#Usage)
+* [Contributing](https://github.com/ari099/PitchPipe/blob/master/README.md#Contributing)
 
 ## Installation
 TBD
