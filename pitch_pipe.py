@@ -46,7 +46,7 @@ class Ui(QtWidgets.QMainWindow):
    def playNote(self):
       self.player.play_wave(
          self.synthesizer.generate_constant_wave(
-            self.noteFrequencies[self.dial.value()-2][self.pitch], 0.5)
+            self.noteFrequencies[self.dial.value()-2][self.pitch], 1.0)
          )
 
    def dialMoved(self):
