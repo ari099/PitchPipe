@@ -68,7 +68,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Operator Mono Bold</family>
+      <family>Georgia</family>
       <pointsize>45</pointsize>
      </font>
     </property>
@@ -90,7 +90,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Operator Mono Bold</family>
+      <family>Georgia</family>
       <pointsize>10</pointsize>
      </font>
     </property>
@@ -112,7 +112,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Operator Mono Light</family>
+      <family>Georgia</family>
       <pointsize>25</pointsize>
      </font>
     </property>
