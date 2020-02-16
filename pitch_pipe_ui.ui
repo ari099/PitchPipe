@@ -68,7 +68,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Georgia</family>
+      <family>Goodie Bag DEMO</family>
       <pointsize>45</pointsize>
      </font>
     </property>
@@ -90,8 +90,8 @@
     </property>
     <property name="font">
      <font>
-      <family>Georgia</family>
-      <pointsize>10</pointsize>
+      <family>Goodie Bag DEMO</family>
+      <pointsize>30</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -112,7 +112,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Georgia</family>
+      <family>Goodie Bag DEMO</family>
       <pointsize>25</pointsize>
      </font>
     </property>
